@@ -1,0 +1,17 @@
+== vim ~/.ssh/config
+
+Host github-as-indera
+    HostName github.com
+    User git
+    IdentityFile /Users/asura/.ssh/id_rsa
+    IdentitiesOnly yes
+
+== clone and change the remote url
+
+git clone https://github.com/indera/indera.github.io
+git remote set-url origin git@github-as-indera:indera/indera.github.io.git
+
+
+== push without entering a password 
+
+magic :)
